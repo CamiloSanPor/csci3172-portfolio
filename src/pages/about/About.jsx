@@ -8,7 +8,7 @@ function About() {
 			<main className="about">
 				<h1 className="underline">About Me</h1>
 
-				<section className="grid">
+				<div className="grid">
 					<article className="shade-primary round-corners grid-element">
 						<h2>Education</h2>
 						<p>
@@ -57,7 +57,7 @@ function About() {
 							Android Studio, Firebase, DevOps, and CI/CD pipelines.
 						</p>
 					</article>
-				</section>
+				</div>
 			</main>
 			<Footer />
 		</>

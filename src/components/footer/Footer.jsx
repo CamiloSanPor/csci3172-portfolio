@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<footer>
 			<h2 className="underline">Contact Me</h2>
-			<section className="contacts">
+			<div className="contacts">
 				<div className="contact">
 					<img src="assets/github-mark-white.png" alt="Github icon" />
 					<a href="https://github.com/CamiloSanPor">Github</a>
@@ -23,8 +23,8 @@ const Footer = () => {
 					<img src="assets/gmail-logo.png" alt="Gmail icon" />
 					<a href="mailto:camilosanpor@gmail.com">Gmail</a>
 				</div>
-			</section>
-			<section className="attributions">
+			</div>
+			<div className="attributions">
 				<a href="https://github.com/logos" title="github icons">
 					GitHub icon created by GitHub - GitHub
 				</a>
@@ -34,7 +34,7 @@ const Footer = () => {
 				<a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">
 					Gmail icon created by Google - Flaticon
 				</a>
-			</section>
+			</div>
 		</footer>
 	);
 };
