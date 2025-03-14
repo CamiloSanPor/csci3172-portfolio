@@ -6,7 +6,7 @@ import "./Projects.css";
 function Projects() {
 	const projects = [
 		{
-			image: "src/assets/projects/bubble_biologist.png",
+			image: "public/assets/projects/bubble_biologist.png",
 			styles: "shade-secondary round-corners grid-element",
 			url: "https://globalgamejam.org/games/2025/bubble-biologist-4",
 			name: "Bubble Biologist",
@@ -16,7 +16,7 @@ function Projects() {
 			tech: "Unity, C#"
 		},
 		{
-			image: "src/assets/projects/Scaly-Scaling.png",
+			image: "public/assets/projects/Scaly-Scaling.png",
 			styles: "shade-primary round-corners grid-element",
 			url: "https://ploopjuice.itch.io/scalyscaling",
 			name: "Scaly Scaling",
@@ -26,7 +26,7 @@ function Projects() {
 			tech: "Godot, GDScript"
 		},
 		{
-			image: "src/assets/projects/Squeaker.png",
+			image: "public/assets/projects/Squeaker.png",
 			styles: "shade-secondary round-corners grid-element",
 			url: "https://lydiav2001.github.io/GlobalGameJam2024/",
 			name: "Squeaker",
@@ -36,7 +36,7 @@ function Projects() {
 			tech: "HTML, CSS, JavaScript"
 		},
 		{
-			image: "src/assets/projects/Weometry-Gars.png",
+			image: "public/assets/projects/Weometry-Gars.png",
 			styles: "shade-secondary round-corners grid-element",
 			url: "https://ploopjuice.itch.io/weometry-gars",
 			name: "Weometry Gars",
@@ -46,7 +46,7 @@ function Projects() {
 			tech: "Godot, GDScript"
 		},
 		{
-			image: "src/assets/projects/Carruto.png",
+			image: "public/assets/projects/Carruto.png",
 			styles: "shade-primary round-corners grid-element",
 			url: "https://v3.globalgamejam.org/2023/games/carruto-0",
 			name: "Carruto",
