@@ -63,7 +63,7 @@ function Projects() {
 			<main className="projects">
 				<h1 className="underline">Projects</h1>
 
-				<section className="grid">
+				<div className="grid">
 					{projects.map((project) => {
 						return (
 							<Project
@@ -77,7 +77,7 @@ function Projects() {
 							/>
 						);
 					})}
-				</section>
+				</div>
 			</main>
 			<Footer />
 		</>
