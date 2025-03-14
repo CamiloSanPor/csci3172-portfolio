@@ -7,12 +7,22 @@ const Footer = () => {
 		<footer>
 			<h2 className="underline">Contact Me</h2>
 			<section className="contacts">
-				<img src="assets/github-mark-white.png" alt="Github icon" />
-				<a href="https://github.com/CamiloSanPor">Github</a>
-				<img src="assets/InBug-White.png" alt="LinkedIn icon" />
-				<a href="https://www.linkedin.com/in/camilo-sanchez-porras">LinkedIn</a>
-				<img src="assets/gmail-logo.png" alt="Gmail icon" />
-				<a href="mailto:camilosanpor@gmail.com">Gmail</a>
+				<div className="contact">
+					<img src="assets/github-mark-white.png" alt="Github icon" />
+					<a href="https://github.com/CamiloSanPor">Github</a>
+				</div>
+
+				<div className="contact">
+					<img src="assets/InBug-White.png" alt="LinkedIn icon" />
+					<a href="https://www.linkedin.com/in/camilo-sanchez-porras">
+						LinkedIn
+					</a>
+				</div>
+
+				<div className="contact">
+					<img src="assets/gmail-logo.png" alt="Gmail icon" />
+					<a href="mailto:camilosanpor@gmail.com">Gmail</a>
+				</div>
 			</section>
 			<section className="attributions">
 				<a href="https://github.com/logos" title="github icons">

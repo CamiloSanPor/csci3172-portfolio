@@ -4,3 +4,15 @@
 	min-height: 75vh;
 	margin-bottom: 2rem;
 }
+
+@media only screen and (max-width: 426px) {
+	.splash-screen {
+		padding: 0rem 2rem;
+		min-height: 50vh;
+	}
+
+	.splash-screen h1 {
+		text-align: center;
+	}
+
+}
