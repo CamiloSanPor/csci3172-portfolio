@@ -3,7 +3,7 @@
 - _Date Created_: 12 MAR 2025
 - _Last Modification Date_: 13 MAR 2025
 - _GitLab URL_: https://git.cs.dal.ca/porras/csci-3172/-/tree/main/labs/lab6
-- _Netlify URL_:
+- _Netlify URL_: https://camilo-sanchez-porras.netlify.app/
 
 ## Authors
 
