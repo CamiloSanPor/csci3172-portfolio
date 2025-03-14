@@ -9,7 +9,7 @@ nav {
 	background-color: var(--background);
 }
 
-nav section {
+nav div {
 	display: flex;
 	padding: 0rem 3rem;
 }
@@ -27,7 +27,6 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 426px) {
-
 	nav {
 		margin: 0;
 		padding: 1rem 0;
@@ -39,11 +38,10 @@ nav a:hover {
 		padding: 0;
 	}
 
-	nav section {
+	nav div {
 		width: 90vw;
 		padding: 0;
 		margin: 0;
 		justify-content: space-around;
 	}
-
 }
