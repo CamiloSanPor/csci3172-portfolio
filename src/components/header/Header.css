@@ -1,0 +1,27 @@
+nav {
+	position: fixed;
+	top: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+	padding: 1rem;
+	width: 100vw;
+	display: flex;
+	justify-content: end;
+	background-color: var(--background);
+}
+
+nav section {
+	display: flex;
+	padding: 0rem 3rem;
+}
+
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0rem 1rem;
+	border-radius: 10px;
+	padding: 1rem 2rem;
+}
+
+nav a:hover {
+	background-color: var(--shade-dark);
+}

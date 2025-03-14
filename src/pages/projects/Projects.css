@@ -1,0 +1,14 @@
+.projects a {
+	width: fit-content;
+}
+
+.projects h2:hover {
+	color: var(--accent);
+	background-image: none;
+}
+
+.projects .grid-element img {
+	max-width: 100%;
+	height: 340px;
+	margin: 1rem 0rem;
+}

@@ -1,0 +1,78 @@
+:root {
+	--text: #f0e7eb;
+	--background: #0a0507;
+	--primary: #d9a3bd;
+	--secondary: #832c57;
+	--accent: #45e8e6;
+	--shade-dark: #1f1419;
+	--shade-primary: rgba(218, 164, 190, 0.2);
+	--shade-secondary: rgba(130, 43, 87, 0.2);
+}
+
+* {
+	color: var(--text);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	background-color: var(--background);
+	margin: 0rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	margin: 0rem 5rem;
+	margin-top: 7rem;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-top: 0rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin: 0rem;
+}
+
+h3 {
+	font-size: 1rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.underline {
+	width: fit-content;
+	background-image: linear-gradient(transparent 90%, var(--accent) 10%);
+}
+
+.accent {
+	color: var(--accent);
+}
+
+.shade-primary {
+	background-color: var(--shade-primary);
+}
+
+.shade-secondary {
+	background-color: var(--shade-secondary);
+}
+
+.round-corners {
+	border-radius: 20px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	margin: 1rem 0rem;
+}
+
+.grid-element {
+	padding: 1rem 2rem;
+}
+
