@@ -1,12 +1,12 @@
 nav {
 	position: fixed;
 	top: 0;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+	border-bottom: 1px solid var(--border);
 	padding: 1rem;
 	width: 100vw;
 	display: flex;
 	justify-content: end;
-	background-color: var(--background);
+	background-color: var(--navigation);
 }
 
 nav div {
@@ -23,6 +23,21 @@ nav a {
 }
 
 nav a:hover {
+	background-color: var(--shade-dark);
+}
+
+nav img {
+	height: 40px;
+}
+
+.theme-toggle {
+	background-color: var(--navigation);
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.theme-toggle:hover {
 	background-color: var(--shade-dark);
 }
 
@@ -44,4 +59,9 @@ nav a:hover {
 		margin: 0;
 		justify-content: space-around;
 	}
+
+	nav img {
+		height: 20px;
+	}
+
 }
