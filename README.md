@@ -127,9 +127,16 @@ function Avatar({ person, size }) {
 - [react.dev](https://react.dev/learn/passing-props-to-a-component)'s Code was used because I had use props before on a previous project but its been a while so I needed a refresher.
 - [react.dev](https://react.dev/learn/passing-props-to-a-component)'s Code was modified by chainging the component to fit the needs of my website.
 
+## AI
+
+https://chatgpt.com/share/67dc807c-0f3c-800b-aa82-98d76fecf2b7
+
+https://chatgpt.com/share/67dc8dc2-d234-800b-b0d5-ccec657874a3
+
 ## Acknowledgments
 
 - LinkedIn Icon used in the footer (https://brand.linkedin.com/downloads)
 - GitHub Icon used in the footer (https://github.com/logos)
 - Gmail Icon used in the footer (https://www.flaticon.com/free-icon/gmail-logo_60543?term=gmail&page=1&position=1&origin=tag&related_id=60543)
 - Realtime Colors - My Goat (https://www.realtimecolors.com/)
+- Shoutouts to React Icons for being awesome (https://react-icons.github.io/react-icons/)
