@@ -27,7 +27,7 @@ function Projects() {
 		},
 		{
 			image: "assets/projects/Squeaker.png",
-			styles: "shade-secondary round-corners grid-element",
+			styles: "shade-primary round-corners grid-element",
 			url: "https://lydiav2001.github.io/GlobalGameJam2024/",
 			name: "Squeaker",
 			role: "Game Design, Programming, Frontend Development",
@@ -47,7 +47,7 @@ function Projects() {
 		},
 		{
 			image: "assets/projects/Carruto.png",
-			styles: "shade-primary round-corners grid-element",
+			styles: "shade-secondary round-corners grid-element",
 			url: "https://v3.globalgamejam.org/2023/games/carruto-0",
 			name: "Carruto",
 			role: "Game design, Artwork, Programming",

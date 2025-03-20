@@ -1,29 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router";
-import "./Header.css";
 import { DARK_THEME, LIGHT_THEME } from "../../constants/constants";
+import "./Header.css";
 import Sun from "../../assets/header/sun.png";
 import Moon from "../../assets/header/moon.png";
+import { useTheme } from "../../context/ThemeProvider";
 
 const Header = () => {
-	const [theme, setTheme] = useState(
-		() => localStorage.getItem("theme") || DARK_THEME
-	);
+	const { theme, setTheme } = useTheme();
 
 	const [icon, setIcon] = useState();
-
-	useEffect(() => {
-		if (theme === LIGHT_THEME) {
-			document.body.classList.remove(DARK_THEME);
-			document.body.classList.add(LIGHT_THEME);
-			setIcon(Sun);
-		} else {
-			document.body.classList.remove(LIGHT_THEME);
-			document.body.classList.add(DARK_THEME);
-			setIcon(Moon);
-		}
-		localStorage.setItem("theme", theme);
-	}, [theme]);
 
 	const toggleTheme = () => {
 		if (theme === DARK_THEME) {
@@ -32,6 +18,14 @@ const Header = () => {
 			setTheme(DARK_THEME);
 		}
 	};
+
+	useEffect(() => {
+		if (theme === LIGHT_THEME) {
+			setIcon(Sun);
+		} else {
+			setIcon(Moon);
+		}
+	}, [theme]);
 
 	return (
 		<nav>
