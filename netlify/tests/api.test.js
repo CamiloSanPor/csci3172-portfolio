@@ -1,5 +1,5 @@
 const request = require("supertest");
-const app = require("../../functions/api").handler;
+const app = require("../../netlify/functions/api").handler;
 
 describe("API Tests", () => {
 	test("GET /all-projects - should return list of projects", async () => {
