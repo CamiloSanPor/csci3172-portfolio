@@ -11,7 +11,7 @@ function App() {
 					`/.netlify/functions/api/weather?city=New%20York`
 				);
 				const data = await response.json();
-				if (data.cod === 200) {
+				if (data != null) {
 					console.log(`City: ${data.name}`);
 					console.log(`Temperature: ${data.main.temp}°C`);
 					console.log(`Humidity: ${data.main.humidity}%`);
