@@ -10,7 +10,6 @@ const router = express.Router();
 const projects = require("./projects.json");
 
 router.get("/all-projects", (req, res) => {
-	console.log(JSON.stringify(projects));
 	res.json(projects);
 });
 
@@ -24,7 +23,6 @@ const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
 
 router.get("/weather", async (req, res) => {
 	const city = req.query.city;
-	console.log(city);
 	if (!city) {
 		return res.status(400).json({ error: "City is required" });
 	}
@@ -33,13 +31,9 @@ router.get("/weather", async (req, res) => {
 			`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${WEATHER_API_KEY}&units=metric`
 		);
 		const data = await response.json();
-		console.log(JSON.stringify(data));
 		if (data.cod !== 200) {
 			return res.status(404).json({ error: "City not found" });
 		}
-		console.log(data.name);
-		console.log(data.main.temp);
-		console.log(data.main.humidity);
 		res.json({
 			city: data.name,
 			temperature: data.main.temp,

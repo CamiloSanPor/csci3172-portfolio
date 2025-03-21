@@ -8,7 +8,9 @@ function App() {
 		const fetchWeather = async () => {
 			try {
 				const response = await fetch(
-					`/.netlify/functions/api/weather?city=New%20York`
+					`/.netlify/functions/api/weather?city=${encodeURIComponent(
+						"Cali Colombia"
+					)}`
 				);
 				const data = await response.json();
 				if (data != null) {
