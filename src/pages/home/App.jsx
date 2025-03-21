@@ -12,10 +12,9 @@ function App() {
 				);
 				const data = await response.json();
 				if (data != null) {
-					console.log(`City: ${data.name}`);
-					console.log(`Temperature: ${data.main.temp}°C`);
-					console.log(`Humidity: ${data.main.humidity}%`);
-					console.log(`Weather: ${data.weather[0].description}`);
+					console.log(`City: ${data.city}`);
+					console.log(`Temperature: ${data.temperature}°C`);
+					console.log(`Humidity: ${data.humidity}%`);
 				} else {
 					console.log("City not found");
 				}
