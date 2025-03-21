@@ -1,7 +1,19 @@
 [
 	{
 		"name": "Bubble Biologist",
-		"authors": "Camilo",
+		"authors": [
+			"Camilo Sanchez",
+			"Eddie Sanoja",
+			"Ezra Saad",
+			"Jonah Morgan",
+			"Kylie Milco",
+			"Liam Oakey",
+			"Nathalie Alders",
+			"Borjigin",
+			"CallmeT",
+			"JeffFBX",
+			"williswillis"
+		],
 		"languages": ["Unity", "C#"],
 		"description": "Join Dr. Penelope Hog as she takes on a special mission in the Atlantic Ocean! Tasked with searching for the threatened blobfish, you'll help her explore, study local marine life, and find as many fish as possible in this classic platformer.",
 		"image": "assets/projects/bubble_biologist.png",
@@ -10,7 +22,7 @@
 	},
 	{
 		"name": "Scaly Scaling",
-		"authors": "Camilo",
+		"authors": ["Camilo Sanchez", "Jonah Morgan", "Lydia Verboom", "Funbil"],
 		"languages": ["Godot", "GDScript"],
 		"description": "Chameleon Chaos! Help Carey Casey the Chameleon obtain delicious golden beetles in this weird puzzle/platformer hybrid.",
 		"image": "assets/projects/Scaly-Scaling.png",
@@ -18,8 +30,13 @@
 		"styles": "shade-primary round-corners grid-element"
 	},
 	{
-		"name": "Squeaker",
-		"authors": "Camilo",
+		"name": "Rat Out",
+		"authors": [
+			"Camilo Sanchez",
+			"Jonah Morgan",
+			"Lydia Verboom",
+			"Afif Asad Ruddraw"
+		],
 		"languages": ["HTML", "CSS", "JavaScript"],
 		"description": "Take the mouse to justice! Discover evidence by scrolling though 'Squeaker' and looking for suspicious activity.",
 		"image": "assets/projects/Squeaker.png",
@@ -28,7 +45,7 @@
 	},
 	{
 		"name": "Weometry Gars",
-		"authors": "Camilo",
+		"authors": ["Camilo Sanchez", "Lydia Verboom", "Daniel Cox"],
 		"languages": ["Godot", "GDScript"],
 		"description": "Weometry Gars is a top down shooter where you, the player, take turns with the enemies firing and dodging shots.",
 		"image": "assets/projects/Weometry-Gars.png",
@@ -37,7 +54,7 @@
 	},
 	{
 		"name": "Carruto",
-		"authors": "Camilo",
+		"authors": ["Camilo Sanchez", "Lydia Verboom", "Badhri Nadh"],
 		"languages": ["Unity", "C#"],
 		"description": "Grow your own clones to solve 1 of 4 unique puzzles. But be careful, for your clones follow your every move... in reverse!",
 		"image": "assets/projects/Carruto.png",
