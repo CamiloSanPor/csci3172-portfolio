@@ -128,11 +128,99 @@ function Avatar({ person, size }) {
 - [react.dev](https://react.dev/learn/passing-props-to-a-component)'s Code was used because I had use props before on a previous project but its been a while so I needed a refresher.
 - [react.dev](https://react.dev/learn/passing-props-to-a-component)'s Code was modified by chainging the component to fit the needs of my website.
 
-## AI
+## Artificial Intelligence Tools Used
 
-https://chatgpt.com/share/67dc807c-0f3c-800b-aa82-98d76fecf2b7
+- [ChatGPT](https://chatgpt.com/) - The AI Tool used
 
-https://chatgpt.com/share/67dc8dc2-d234-800b-b0d5-ccec657874a3
+### Prompt Used on _ChatPGT_
+
+```
+I have a useState in my header.jsx that I want to reference on my footer.jsx
+```
+
+Further prompts can be found in [ChatGPT](https://chatgpt.com/share/67dc807c-0f3c-800b-aa82-98d76fecf2b7)
+
+The code prompt above was used [ChatGPT](https://chatgpt.com/share/67dc807c-0f3c-800b-aa82-98d76fecf2b7) to generate the code shown below:
+
+```
+import { createContext, useState, useContext, useEffect } from "react";
+
+const LIGHT_THEME = "light-theme";
+const DARK_THEME = "dark-theme";
+
+const ThemeContext = createContext();
+
+export const ThemeProvider = ({ children }) => {
+	const [theme, setTheme] = useState(
+		() => localStorage.getItem("theme") || DARK_THEME
+	);
+
+	useEffect(() => {
+		if (theme === LIGHT_THEME) {
+			document.body.classList.remove(DARK_THEME);
+			document.body.classList.add(LIGHT_THEME);
+		} else {
+			document.body.classList.remove(LIGHT_THEME);
+			document.body.classList.add(DARK_THEME);
+		}
+		localStorage.setItem("theme", theme);
+	}, [theme]);
+
+	return (
+		<ThemeContext.Provider value={{ theme, setTheme }}>
+			{children}
+		</ThemeContext.Provider>
+	);
+};
+
+export function useTheme() {
+	return useContext(ThemeContext);
+}
+
+```
+
+#### ThemeProvider.jsx
+
+_Lines 1 - 32_
+
+```
+import { createContext, useState, useContext, useEffect } from "react";
+import { DARK_THEME, LIGHT_THEME } from "../constants/constants";
+
+const ThemeContext = createContext();
+
+export const ThemeProvider = ({ children }) => {
+	const [theme, setTheme] = useState(
+		() => localStorage.getItem("theme") || DARK_THEME
+	);
+
+	useEffect(() => {
+		if (theme === LIGHT_THEME) {
+			document.body.classList.remove(DARK_THEME);
+			document.body.classList.add(LIGHT_THEME);
+		} else {
+			document.body.classList.remove(LIGHT_THEME);
+			document.body.classList.add(DARK_THEME);
+		}
+		localStorage.setItem("theme", theme);
+	}, [theme]);
+
+	return (
+		<ThemeContext.Provider value={{ theme, setTheme }}>
+			{children}
+		</ThemeContext.Provider>
+	);
+};
+
+export function useTheme() {
+	return useContext(ThemeContext);
+}
+
+```
+
+- The code in [ChatGPT](https://chatgpt.com/share/67dc807c-0f3c-800b-aa82-98d76fecf2b7) was implemented by using the React context API to pass the theme variable between different pages without having to pass it through multiple component props
+- [ChatGPT](https://chatgpt.com/share/67dc807c-0f3c-800b-aa82-98d76fecf2b7)'s Code was used because I wanted to keep the theme consistent through my whole website. I didn't know how to share useState variables globally, so I asked GPT and it told me about React Context
+- [ChatGPT](https://chatgpt.com/share/67dc807c-0f3c-800b-aa82-98d76fecf2b7)'s Code was modified by using constants. Other than that I didn't change it much because this is mostly a utility class.
 
 ## Acknowledgments
 
