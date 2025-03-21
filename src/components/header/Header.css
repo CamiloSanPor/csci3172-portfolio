@@ -6,11 +6,13 @@ nav {
 	width: 100vw;
 	display: flex;
 	justify-content: end;
+	align-items: center;
 	background-color: var(--navigation);
 }
 
 nav div {
 	display: flex;
+	align-items: center;
 	padding: 0rem 3rem;
 }
 
