@@ -46,7 +46,7 @@ function Projects() {
 					</div>
 				)}
 
-				<div className="grid-2-columns">
+				<div className="grid">
 					{projects.map((project) => {
 						return (
 							<Project
