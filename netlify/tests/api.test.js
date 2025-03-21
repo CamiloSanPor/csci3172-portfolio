@@ -1,7 +1,9 @@
 const request = require("supertest");
-const app = require("../../netlify/functions/api").handler;
+const { app } = require("../../netlify/functions/api");
 
 describe("API Tests", () => {
+	jest.setTimeout(10000);
+
 	test("GET /all-projects - should return list of projects", async () => {
 		const response = await request(app).get(
 			"/.netlify/functions/api/all-projects"

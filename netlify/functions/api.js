@@ -41,5 +41,6 @@ router.get("/weather", async (req, res) => {
 });
 
 module.exports = {
+	app,
 	handler: serverless(app)
 };
