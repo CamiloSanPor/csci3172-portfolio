@@ -24,6 +24,7 @@ const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
 
 router.get("/weather", async (req, res) => {
 	const city = req.query.city;
+	console.log(city);
 	if (!city) {
 		return res.status(400).json({ error: "City is required" });
 	}
