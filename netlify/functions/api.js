@@ -37,6 +37,9 @@ router.get("/weather", async (req, res) => {
 		if (data.cod !== 200) {
 			return res.status(404).json({ error: "City not found" });
 		}
+		confirm.log(data.name);
+		confirm.log(data.main.temp);
+		confirm.log(data.main.humidity);
 		res.json({
 			city: data.name,
 			temperature: data.main.temp,
