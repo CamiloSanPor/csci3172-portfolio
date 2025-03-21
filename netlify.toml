@@ -1,5 +1,5 @@
 [build]
-  command = "npm test && vite build"
+  command = "npm test -- --detectOpenHandles && vite build"
   publish = "dist"
   functions = "netlify/functions"
 
