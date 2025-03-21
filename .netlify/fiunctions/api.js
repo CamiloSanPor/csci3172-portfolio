@@ -11,7 +11,8 @@ const router = express.Router();
 const projects = require("./projects.json");
 
 router.get("/projects", (req, res) => {
-  res.json(projects);
+	console.log(JSON.stringify(projects));
+	res.json(projects);
 });
 
 app.use("/.netlify/functions/api", router);
