@@ -8,7 +8,7 @@ function App() {
 		const fetchWeather = async () => {
 			try {
 				const response = await fetch(
-					`/.netlify/functions/api/weather?city=NewYorkCity`
+					`/.netlify/functions/api/weather?city=New%20York`
 				);
 				const data = await response.json();
 				if (data.cod === 200) {
