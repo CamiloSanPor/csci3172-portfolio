@@ -9,26 +9,25 @@ function App() {
 		temperature: "",
 		humidity: ""
 	});
+	const [error, setError] = useState("");
 
 	useEffect(() => {
 		const fetchWeather = async () => {
 			try {
 				const response = await fetch(
 					`/.netlify/functions/api/weather?city=${encodeURIComponent(
-						"Santiago de Cali"
+						"Not a real city"
 					)}`
 				);
 				const data = await response.json();
-				if (data != null) {
-					console.log(`City: ${data.city}`);
-					console.log(`Temperature: ${data.temperature}°C`);
-					console.log(`Humidity: ${data.humidity}%`);
-					setWeather(data);
-				} else {
-					console.log("City not found");
+				if (!response.ok) {
+					throw new Error(data.error || "Failed to fetch weather data");
 				}
+				setWeather(data);
+				setError("");
 			} catch (error) {
 				console.error("Error fetching weather data:", error);
+				setError("Error fetching weather data. Please try again later.");
 			}
 		};
 
@@ -40,9 +39,13 @@ function App() {
 			<Header />
 			<main className="splash-screen shade-secondary round-corners">
 				<h1 className="underline">Camilo Sanchez Porras</h1>
-				<p>
-					{weather.city} {weather.temperature}°C {weather.humidity}%
-				</p>
+				{error ? (
+					<p className="error-message">{error}</p>
+				) : (
+					<p>
+						{weather.city} {weather.temperature}°C {weather.humidity}%
+					</p>
+				)}
 			</main>
 			<Footer />
 		</>
