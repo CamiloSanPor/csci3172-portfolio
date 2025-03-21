@@ -36,7 +36,7 @@ function App() {
 			<Header />
 			<main className="splash-screen shade-secondary round-corners">
 				<h1 className="underline">Camilo Sanchez Porras</h1>
-				<p>{data.city} {data.temperature}°C {data.humidity}%</p>
+				<p>{weather.city} {weather.temperature}°C {weather.humidity}%</p>
 			</main>
 			<Footer />
 		</>
