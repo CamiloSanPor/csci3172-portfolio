@@ -49,7 +49,7 @@ footer h2 {
 	align-items: center;
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 768px) {
 	footer h2 {
 		margin: 1rem 2rem;
 	}

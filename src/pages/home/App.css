@@ -5,7 +5,7 @@
 	margin-bottom: 2rem;
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 768px) {
 	.splash-screen {
 		padding: 0rem 2rem;
 		min-height: 50vh;
@@ -14,5 +14,4 @@
 	.splash-screen h1 {
 		text-align: center;
 	}
-
 }

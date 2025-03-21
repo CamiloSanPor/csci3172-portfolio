@@ -41,7 +41,7 @@ nav img {
 	background-color: var(--shade-dark);
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 768px) {
 	nav {
 		margin: 0;
 		padding: 1rem 0;
@@ -63,5 +63,4 @@ nav img {
 	nav img {
 		height: 20px;
 	}
-
 }
