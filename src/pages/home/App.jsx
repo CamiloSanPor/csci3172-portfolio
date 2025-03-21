@@ -9,7 +9,8 @@ function App() {
 		temperature: "",
 		humidity: ""
 	});
-	const [error, setError] = useState("");
+	const [loading, setLoading] = useState(true);
+	const [error, setError] = useState(null);
 
 	const bestCityInTheWorld = "Santiago de Cali";
 
@@ -41,9 +42,19 @@ function App() {
 			<Header />
 			<main className="splash-screen shade-secondary round-corners">
 				<h1 className="underline">Camilo Sanchez Porras</h1>
-				{error ? (
-					<p className="error-message">{error}</p>
-				) : (
+				{loading && (
+					<div id="loading" className="message">
+						<p>Loading...</p>
+					</div>
+				)}
+
+				{error && (
+					<div id="error" className="message">
+						<p>{error}</p>
+					</div>
+				)}
+
+				{!loading && !error && (
 					<p>
 						{weather.city} {weather.temperature}°C {weather.humidity}%
 					</p>
