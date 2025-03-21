@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
+import { FaNairaSign } from "react-icons/fa6";
 
 function App() {
 	const [weather, setWeather] = useState({
@@ -31,6 +32,8 @@ function App() {
 			} catch (error) {
 				console.error("Error fetching weather data:", error);
 				setError("Error fetching weather data. Please try again later.");
+			} finally {
+				setLoading(false);
 			}
 		};
 
