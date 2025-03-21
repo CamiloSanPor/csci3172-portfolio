@@ -1,8 +1,6 @@
 const express = require("express");
 const serverless = require("serverless-http");
 const dotenv = require("dotenv");
-const axios = require("axios");
-const fetch = require("node-fetch");
 
 dotenv.config();
 const app = express();
