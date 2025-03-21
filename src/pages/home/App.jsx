@@ -15,7 +15,7 @@ function App() {
 			try {
 				const response = await fetch(
 					`/.netlify/functions/api/weather?city=${encodeURIComponent(
-						"Cali Colombia"
+						"Santiago de Cali"
 					)}`
 				);
 				const data = await response.json();
