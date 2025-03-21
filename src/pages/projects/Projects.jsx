@@ -17,8 +17,9 @@ function Projects() {
 					"/.netlify/functions/api/all-projects"
 				);
 				setProjects(response.data);
-			} catch (err) {
-				setError("Failed to fetch projects");
+			} catch (error) {
+				setError(error);
+				console.error("Error fetching projects:", error);
 			} finally {
 				setLoading(false);
 			}

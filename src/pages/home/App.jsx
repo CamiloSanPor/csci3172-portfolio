@@ -4,12 +4,11 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 
 function App() {
-	// Fetch weather data when the component mounts
 	useEffect(() => {
 		const fetchWeather = async () => {
 			try {
 				const response = await fetch(
-					"/.netlify/functions/api/weather"
+					`/.netlify/functions/api/weather?city=NewYorkCity`
 				);
 				const data = await response.json();
 				if (data.cod === 200) {
