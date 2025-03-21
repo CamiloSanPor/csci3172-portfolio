@@ -1,5 +1,8 @@
 [build]
-  functions = "functions"
-  node_bundler = "esbuild"
-[functions]
-  node_bundler = "esbuild"
+  command = "vite build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[dev]
+  functions = "netlify/functions"
+  publish = "dist"
