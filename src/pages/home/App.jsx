@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import { FaNairaSign } from "react-icons/fa6";
+import Hamburger from "../../components/hamburger/Hamburger";
 
 function App() {
 	const [weather, setWeather] = useState({
@@ -63,6 +63,7 @@ function App() {
 					</p>
 				)}
 			</main>
+			<Hamburger />
 			<Footer />
 		</>
 	);

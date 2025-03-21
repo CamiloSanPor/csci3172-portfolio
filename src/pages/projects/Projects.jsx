@@ -3,6 +3,7 @@ import axios from "axios";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Project from "../../components/project/Project";
+import Hamburger from "../../components/hamburger/Hamburger"
 import "./Projects.css";
 
 function Projects() {
@@ -62,6 +63,7 @@ function Projects() {
 					})}
 				</div>
 			</main>
+			<Hamburger />
 			<Footer />
 		</>
 	);

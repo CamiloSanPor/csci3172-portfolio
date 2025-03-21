@@ -1,5 +1,6 @@
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
+import Hamburger from "../../components/hamburger/Hamburger";
 import "./About.css";
 import { useState } from "react";
 import {
@@ -134,6 +135,7 @@ function About() {
 					</div>
 				</section>
 			</main>
+			<Hamburger />
 			<Footer />
 		</>
 	);
