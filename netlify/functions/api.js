@@ -33,10 +33,10 @@ router.get("/weather", async (req, res) => {
 			`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${WEATHER_API_KEY}&units=metric`
 		);
 		const data = await response.json();
+		console.log(JSON.stringify(data));
 		if (data.cod !== 200) {
 			return res.status(404).json({ error: "City not found" });
 		}
-		console.log(JSON.stringify(data));
 		res.json({
 			city: data.name,
 			temperature: data.main.temp,
