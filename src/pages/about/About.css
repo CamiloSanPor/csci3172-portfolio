@@ -18,25 +18,35 @@
 }
 
 .search::placeholder {
-  color: black;
+	color: black;
 }
 
 .skill-cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0rem 5rem;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0rem 5rem;
+	align-items: center;
+	justify-content: center;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem;
+}
+
+.card p {
+	text-align: center;
 }
 
 .icon {
-  font-size: 48px;
+	font-size: 48px;
+}
+
+@media only screen and (max-width: 426px) {
+	.icon {
+		font-size: 24px;
+	}
 }
