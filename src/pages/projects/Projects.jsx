@@ -13,8 +13,9 @@ function Projects() {
 	useEffect(() => {
 		const fetchProjects = async () => {
 			try {
-				const response = await axios.get("/.netlify/functions/api/all-projects");
-				console.log(response.data);
+				const response = await axios.get(
+					"/.netlify/functions/api/all-projects"
+				);
 				setProjects(response.data);
 			} catch (err) {
 				setError("Failed to fetch projects");
@@ -26,19 +27,23 @@ function Projects() {
 		fetchProjects();
 	}, []);
 
-	if (loading) {
-		return <div>Loading...</div>;
-	}
-
-	if (error) {
-		return <div>{error}</div>;
-	}
-
 	return (
 		<>
 			<Header className="shade-primary" />
 			<main className="projects">
 				<h1 className="underline">Projects</h1>
+
+				{loading && (
+					<div id="loading" className="message">
+						<p>Loading...</p>
+					</div>
+				)}
+
+				{error && (
+					<div id="error" className="message">
+						<p>{error}</p>
+					</div>
+				)}
 
 				<div className="grid-2-columns">
 					{projects.map((project) => {
