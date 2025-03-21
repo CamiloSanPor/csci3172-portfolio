@@ -10,7 +10,7 @@ const router = express.Router();
 
 const projects = require("./projects.json");
 
-router.get("/projects", (req, res) => {
+router.get("/all-projects", (req, res) => {
 	console.log(JSON.stringify(projects));
 	res.json(projects);
 });

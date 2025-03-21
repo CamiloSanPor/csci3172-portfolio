@@ -13,7 +13,7 @@ function Projects() {
 	useEffect(() => {
 		const fetchProjects = async () => {
 			try {
-				const response = await axios.get("/.netlify/functions/api/projects");
+				const response = await axios.get("/.netlify/functions/api/all-projects");
 				console.log(response.data);
 				setProjects(response.data);
 			} catch (err) {
