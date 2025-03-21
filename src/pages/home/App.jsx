@@ -11,12 +11,14 @@ function App() {
 	});
 	const [error, setError] = useState("");
 
+	const bestCityInTheWorld = "Santiago de Cali";
+
 	useEffect(() => {
 		const fetchWeather = async () => {
 			try {
 				const response = await fetch(
 					`/.netlify/functions/api/weather?city=${encodeURIComponent(
-						"Not a real city"
+						bestCityInTheWorld
 					)}`
 				);
 				const data = await response.json();
