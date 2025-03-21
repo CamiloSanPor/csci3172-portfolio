@@ -4,7 +4,11 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 
 function App() {
-	const [weather, setWeather] = useState();
+	const [weather, setWeather] = useState({
+		city: "",
+		temperature: "",
+		humidity: ""
+	});
 
 	useEffect(() => {
 		const fetchWeather = async () => {
@@ -36,7 +40,9 @@ function App() {
 			<Header />
 			<main className="splash-screen shade-secondary round-corners">
 				<h1 className="underline">Camilo Sanchez Porras</h1>
-				<p>{weather.city} {weather.temperature}°C {weather.humidity}%</p>
+				<p>
+					{weather.city} {weather.temperature}°C {weather.humidity}%
+				</p>
 			</main>
 			<Footer />
 		</>
