@@ -15,10 +15,6 @@ router.get("/all-projects", (req, res) => {
 
 app.use("/.netlify/functions/api", router);
 
-module.exports = {
-	handler: serverless(app)
-};
-
 const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
 
 router.get("/weather", async (req, res) => {
@@ -43,3 +39,7 @@ router.get("/weather", async (req, res) => {
 		res.status(500).json({ error: "Server error" });
 	}
 });
+
+module.exports = {
+	handler: serverless(app)
+};
