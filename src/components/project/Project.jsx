@@ -13,7 +13,7 @@ const Project = ({
 		<article className={styles}>
 			<img src={image} alt={`Screenshot of ${name}`} />
 			<a href={url}>
-				<h2 className="underline">{name}</h2>
+				<h2>{name}</h2>
 			</a>
 			{authors && authors.length > 0 && (
 				<div className="authors">
