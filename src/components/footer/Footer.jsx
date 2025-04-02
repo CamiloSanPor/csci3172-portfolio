@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router";
+import React from "react";
 import "./Footer.css";
 import GitHubBlack from "../../assets/footer/github-mark-black.png";
 import GitHubWhite from "../../assets/footer/github-mark-white.png";
@@ -9,6 +8,7 @@ import GmailBlack from "../../assets/footer/gmail-logo-black.png";
 import GmailWhite from "../../assets/footer/gmail-logo-white.png";
 import { useTheme } from "../../context/ThemeProvider";
 import { LIGHT_THEME } from "../../constants/constants";
+import ContactForm from "../contact_form/ContactForm";
 
 const Footer = () => {
 	const { theme } = useTheme();
@@ -55,6 +55,9 @@ const Footer = () => {
 					<a href="mailto:camilosanpor@gmail.com">Gmail</a>
 				</div>
 			</div>
+
+			<ContactForm />
+
 			<div className="attributions">
 				<h3>Attributions</h3>
 				<a href="https://github.com/logos" title="github icons">

@@ -43,7 +43,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<main className="splash-screen shade-secondary round-corners">
+			<main className="splash-screen round-corners">
 				<h1 className="underline">Camilo Sanchez Porras</h1>
 				{loading && (
 					<div id="loading" className="message">

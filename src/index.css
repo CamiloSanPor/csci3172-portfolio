@@ -1,28 +1,27 @@
 .light-theme {
-	--text: #0b0e0e;
-	--background: #f2f8f8;
-	--primary: #d2f9f9;
-	--secondary: #7bebeb;
-	--accent: #41f9f9;
-	--shade-dark: #6bfafa;
-	--shade-primary: rgba(122, 235, 235, 0.2);
-	--shade-secondary: #bcf6f6;
-	--border: rgba(255, 255, 255, 0.25);
-	--navigation: #a5f3f3;
+	--text: #130900;
+	--background: #fff7f0;
+	--primary: #f9890d;
+	--secondary: #88f1c4;
+	--accent: #54f2d9;
+	--shade: hsl(154, 79%, 74%, 20%);
+	--shade-accent: #a0f8eb;
+	--border: rgba(100, 100, 100, 0.5);
 }
 
 .dark-theme {
 	--text: #f0e7eb;
 	--background: #0a0507;
-	--primary: #d9a3bd;
-	--secondary: #832c57;
+	--primary: rgba(130, 43, 87, 0.2);
+	--secondary: rgba(218, 164, 190, 0.2);
 	--accent: #45e8e6;
-	--shade-dark: #1f1419;
-	--shade-primary: rgba(218, 164, 190, 0.2);
-	--shade-secondary: rgba(130, 43, 87, 0.2);
+	--shade: #1f1419;
+	--shade-accent: #a4f4f2;
 	--border: rgba(255, 255, 255, 0.25);
-	--navigation: var(--background);
 }
+
+/* --primary: #832c57;
+	--secondary: #d9a3bd; */
 
 * {
 	color: var(--text);
@@ -69,11 +68,11 @@ a {
 }
 
 .shade-primary {
-	background-color: var(--shade-primary);
+	background-color: var(--primary);
 }
 
 .shade-secondary {
-	background-color: var(--shade-secondary);
+	background-color: var(--secondary);
 }
 
 .round-corners {

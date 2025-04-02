@@ -10,12 +10,12 @@
 		position: fixed;
 		bottom: 1rem;
 		right: 1rem;
-		background-color: var(--shade-dark);
+		background-color: var(--shade);
 		border: 4px solid white;
 	}
 
 	.hamburger-menu * {
-		background-color: var(--shade-dark);
+		background-color: var(--shade);
 	}
 
 	.menu-button {

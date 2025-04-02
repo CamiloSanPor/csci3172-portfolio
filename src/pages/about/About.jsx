@@ -69,7 +69,7 @@ function About() {
 				<h1 className="underline">About Me</h1>
 
 				<div className="flex-grid">
-					<article className="shade-primary round-corners flex-element">
+					<article className="shade-secondary round-corners flex-element">
 						<h2>Education</h2>
 						<p>
 							<strong>Bachelor of Applied Computer Science</strong>
@@ -84,7 +84,7 @@ function About() {
 						<p>Database Systems</p>
 					</article>
 
-					<article className="shade-secondary round-corners flex-element">
+					<article className="shade-primary round-corners flex-element">
 						<h2>Goals</h2>
 						<p>
 							My goal is to continue developing my skills and open my own game
@@ -96,7 +96,7 @@ function About() {
 						</p>
 					</article>
 
-					<article className="shade-primary round-corners flex-element">
+					<article className="shade-secondary round-corners flex-element">
 						<h2>Experience</h2>
 						<p>
 							<strong>Database Systems Teaching Assistant</strong>
@@ -112,8 +112,8 @@ function About() {
 						<p>Casino Nova Scotia</p>
 					</article>
 				</div>
-				<section className="shade-secondary round-corners skills">
-					<h2>Skills</h2>
+				<section className="round-corners skills">
+					<h2 className="underline">Skills</h2>
 
 					<input
 						type="text"
