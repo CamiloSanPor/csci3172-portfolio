@@ -7,7 +7,7 @@ nav {
 	display: flex;
 	justify-content: end;
 	align-items: center;
-	background-color: var(--background);
+	background-color: var(--navigation);
 }
 
 nav div {
@@ -33,7 +33,7 @@ nav img {
 }
 
 .theme-toggle {
-	background-color: var(--background);
+	background-color: var(--navigation);
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;

@@ -56,7 +56,7 @@ const Footer = () => {
 				</div>
 			</div>
 
-			<ContactForm />
+			{/* <ContactForm /> */}
 
 			<div className="attributions">
 				<h3>Attributions</h3>
